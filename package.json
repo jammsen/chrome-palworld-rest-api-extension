@@ -1,0 +1,32 @@
+{
+  "name": "chrome-palworld-restapi-extension",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/jammsen/chrome-palworld-restapi-extension"
+  },
+  "version": "0.0.1",
+  "description": "Chromium-based browser plugin for the Palworld Dedicated REST API",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack/webpack.config.js",
+    "watch": "webpack --config webpack/webpack.config.js --watch",
+    "format": "npx prettier \"{src,public}/**/*.{ts,tsx,json,css,html}\" --write"
+  },
+  "keywords": ["palworld", "rest-api", "chrome-extension"],
+  "author": "jammsen, christestet",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.263",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.10.0",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "prettier": "^3.2.5",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
