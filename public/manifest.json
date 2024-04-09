@@ -21,11 +21,7 @@
   "host_permissions": ["http://*/*", "https://*/*"],
   "web_accessible_resources": [
     {
-      "resources": [
-        "js/jquery-3.4.1.min.js",
-        "js/color-modes.js",
-        "js/bootstrap.bundle.min.js"
-      ],
+      "resources": ["js/jquery-3.4.1.min.js", "js/color-modes.js", "js/bootstrap.bundle.min.js"],
       "matches": ["<all_urls>"]
     }
   ]
